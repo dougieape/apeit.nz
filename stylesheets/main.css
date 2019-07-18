@@ -1,0 +1,42 @@
+.divWithBgImage {
+    /*position: fixed;*/
+    width: 100%;
+    height: 500px;
+    background: url(../images/ape-blur-blurry-39374.jpg) no-repeat center center fixed;
+    background-size: cover; /*proportional resize*/
+    -webkit-transition: background 2s;
+    -moz-transition: background 2s;
+    -o-transition: background 2s;
+    transition: background 2s ease-in-out;
+  }
+  .far {
+    color: white;
+  }
+  .centred {
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     height: 40px;
+     width:100%; 
+     text-align:center
+  }
+  .ctr {
+    opacity: 0;
+  }
+  .far:hover {
+    color: black;
+  }
+  .capability {
+    text-shadow: 0px 5px 10px black, 0px -5px 10px black;
+  }
+  body {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 800;
+  }
+
+  .navbar-brand {
+      font-size: 3rem;
+  }
