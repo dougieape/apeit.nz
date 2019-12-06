@@ -1,8 +1,19 @@
-.divWithBgImage {
+#hero {
+  background: url(../images/founder.jpeg) no-repeat center;
+  background-size: cover; /*proportional resize*/
+  background-position-x: 70%; 
+  opacity: 1;
+}
+
+#hero>h1, #hero>h2, #hero>p {
+  text-shadow: 0px 5px 10px black, 0px -5px 10px black, 5px 0px 10px black, -5px 0px 10px black;
+}
+
+.divWithBgImage1 {
     /*position: fixed;*/
     width: 100%;
     height: 500px;
-    background: url(../images/ape-blur-blurry-39374.jpg) no-repeat center center fixed;
+    background: url(../images/ape-hand.png) no-repeat center center fixed;
     background-size: cover; /*proportional resize*/
     -webkit-transition: background 2s;
     -moz-transition: background 2s;
@@ -12,7 +23,7 @@
   .far {
     color: white;
   }
-  .centred {
+  .centred1 {
      position: absolute;
      margin: auto;
      top: 0;
@@ -34,9 +45,17 @@
   }
   body {
     font-family: 'Comfortaa', cursive;
-    font-weight: 800;
+    /*font-weight: 800;*/
   }
+
+p.lead, .card-subtitle {
+  font-family: 'Lora', serif;
+}
 
   .navbar-brand {
       font-size: 3rem;
+  }
+
+  i {
+    opacity: .3;
   }
