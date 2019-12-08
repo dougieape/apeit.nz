@@ -1,5 +1,5 @@
 #hero {
-  background: url(../images/founder.jpeg) no-repeat center;
+  background: url(../images/founder-md.jpeg) no-repeat center;
   background-size: cover; /*proportional resize*/
   background-position-x: 70%; 
   opacity: 1;
