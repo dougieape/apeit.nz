@@ -59,3 +59,26 @@ p.lead, .card-subtitle {
   i {
     opacity: .3;
   }
+
+
+  html {
+    font-size: 1rem;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    html {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 0.8rem;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    html {
+      font-size: 0.7rem;
+    }
+  }
