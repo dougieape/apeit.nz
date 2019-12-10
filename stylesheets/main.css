@@ -1,5 +1,5 @@
 #hero {
-  background: url(../images/founder-md.jpeg) no-repeat center;
+  background: url(../images/founder-md.png) no-repeat center;
   background-size: cover; /*proportional resize*/
   background-position-x: 70%; 
   opacity: 1;
@@ -64,7 +64,7 @@ p.lead, .card-subtitle {
   html {
     font-size: 1rem;
   }
-  
+/*  
   @media only screen and (max-width: 992px) {
     html {
       font-size: 0.9rem;
@@ -76,9 +76,28 @@ p.lead, .card-subtitle {
       font-size: 0.8rem;
     }
   }
-
+*/
   @media only screen and (max-width: 480px) {
-    html {
-      font-size: 0.7rem;
+    .quote {
+      font-size: 1rem;
+    }
+    #hero>h2 {
+      font-size: 1.5rem;
+    }
+
+    #hero>p.lead {
+      font-size: 1.2rem;
+    }
+
+    #hero>p {
+      font-size: 1rem;  
+    }
+
+    #hero-container {
+      padding: 0;
+    }
+
+    #hero {
+      border-radius: 0;
     }
   }
