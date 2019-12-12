@@ -81,7 +81,7 @@ p.lead, .card-subtitle {
     .quote {
       font-size: 1rem;
     }
-    #hero>h2 {
+    h2 {
       font-size: 1.5rem;
     }
 
@@ -93,11 +93,19 @@ p.lead, .card-subtitle {
       font-size: 1rem;  
     }
 
-    #hero-container {
-      padding: 0;
+    .container, .service {
+      padding: 0 !important;
+    }
+
+    .jumbotron {
+      border-radius: 0;
     }
 
     #hero {
       border-radius: 0;
+    }
+
+    #steps>h2, #steps h4 {
+      text-align: left !important;
     }
   }
