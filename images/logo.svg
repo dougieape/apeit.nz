@@ -6,7 +6,7 @@
      width="2.36333in" height="1.52333in"
      viewBox="0 0 709 457">
   <path id="gorilla"
-        fill="dimgray" stroke="none" stroke-width="1"
+        fill="#bde1e7" stroke="none" stroke-width="1"
         d="M 412.19,67.00
            C 411.70,61.21 408.79,50.54 406.68,45.00
              397.82,27.45 393.18,22.45 380.27,12.91
@@ -124,7 +124,7 @@
              329.05,137.16 357.04,137.20 373.09,145.00 Z
            "/>
 <path id="it"
-        fill="gray" stroke="none" stroke-width="1"
+        fill="#e6e26d" stroke="none" stroke-width="1"
         d="
            M 573.00,208.53
            C 569.90,209.53 567.72,210.28 565.73,213.11
@@ -165,7 +165,7 @@
              635.00,171.00 635.00,214.00 635.00,214.00 Z
            "/>
 <path id="ape" fill-rule="evenodd"
-        fill="black" stroke="none" stroke-width="1"
+        fill="white" stroke="none" stroke-width="1"
         d="
            M 149.00,346.00
            C 149.00,346.00 149.00,354.00 149.00,354.00
@@ -236,7 +236,7 @@
            "/>
 
 <path id="web stuff"
-        fill="dimgray" stroke="none" stroke-width="1"
+        fill="#bde1e7" stroke="none" stroke-width="1"
         d="
            M 397.00,409.00
            C 397.00,409.00 397.00,388.00 397.00,388.00

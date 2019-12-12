@@ -1,8 +1,19 @@
-#hero {
-  background: url(../images/founder-md.png) no-repeat center;
-  background-size: cover; /*proportional resize*/
-  background-position-x: 70%; 
+#hero-container {
+  background: url(../images/meri-sorgaard-a2VNcdMEbOI-unsplash.jpg) no-repeat center;
+  background-size: 100%; /*proportional resize*/
+ /* background-position-x: 70%; */
   opacity: 1;
+}
+
+#face-container {
+  background: url(../images/founder-md.png) no-repeat center;
+  background-size: 100%; /*proportional resize*/
+ /* background-position-x: 70%; */
+  opacity: 1;
+}
+
+#hero, .navbar {
+  background: none;
 }
 
 #hero>h1, #hero>h2, #hero>p {

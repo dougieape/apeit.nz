@@ -15,9 +15,10 @@
 
   </head>
     <body>
-      <div class="bs-component">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="mailto:dougie@apeit.nz"><img width="120" src="images/webstuffpath.svg"></a>
+      <div id="hero-container" class="container-fluid m-0">
+        <div class="bs-component">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="mailto:dougie@apeit.nz"><img width="120" src="images/logo.svg"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -51,50 +52,60 @@
       </div>
       <div></div>
 
-      <div id="hero-container" class="container">
         <hr class="d-none d-sm-block">
-        <div id="hero" class="jumbotron centred text-white">
-            <h2 class="col col-sm-9">Tell us what you need from your website</h2>
-            <br class="d-none d-sm-block">
-            <p class="lead col-8">We will design and create a website you can be proud of.</p>
-            <p class="col-9 col-sm-6">From boosting your brand and online sales to visualising complex data, give us a call to see how we can help!</p>
+        <div id="hero" class="jumbotron centred text-white w-100 bg-none">
+            <h2 class="col col-sm-9">Hi.  We're ape it.  We do web stuff.</h2>
             <br>
-            <a href="mailto:dougie@apeit.nz?subject=Just+saying+hello&body=Hi.+Would+love+to+have+a+chat+about+web+stuff.+Feel+free+to+call+me+on..." title="Say Hi" class="w-50 nav-link btn btn-lg btn-primary">Say Hi</a>
+            <a title="Say Hi" class="w-25 nav-link btn btn-lg btn-info" href="mailto:dougie@apeit.nz?subject=Just+saying+hello&body=Hi.+Would+love+to+have+a+chat+about+web+stuff.+Feel+free+to+call+me+on...">Say Hi</a>
         </div>
       </div>
 
-        <div class="bg-white">
-        <div class="container">
-            <div id="steps" class="jumbotron bg-white mb-0">
-            <h2 class="text-center text-success">Watch your website go live in 3, 2, 1...</h2>
-        <div class="row my-lg-5">
-            <div class="col-lg d-flex flex-column justify-content-center">
-                <div class="d-none d-lg-block m-2 text-center"><i class="fas fa-5x fa-pen-nib"></i></div>
-                <div class="card-body">
-                  <h4 class="card-title text-center">Design</h4>
-                  <h5 class="card-subtitle mb-2 text-success">Start with a chat, we'll discuss what your business can achieve with its web presence.</h5>
-                  <p class="card-text">With your input about websites and brands you like, we will crack on with designing your site.</p>
-              </div>
-            </div>
-            <div class="col-lg d-flex flex-column justify-content-center">
-              <div class="d-none d-lg-block m-2 text-center"><i class="fas fa-5x fa-wrench"></i></div>
-              <div class="card-body">
-                <h4 class="card-title text-center">Build</h4>
-                <h5 class="card-subtitle mb-2 text-success">This is where we turn all the creative ideas into a reality.</h5>
-                <p class="card-text">We test and review the website with you until you have a website you really like.</p>
-              </div>
-            </div>
-            <div class="col-lg d-flex flex-column justify-content-center">
-                <div class="d-none d-lg-block m-2 text-center"><i class="fas fa-5x fa-rocket"></i></div>
-                <div class="card-body">
-                  <h4 class="card-title text-center">Launch</h4>
-                  <h5 class="card-subtitle mb-2 text-success">Once you give the green light we put your website in public view for your customers.</h5>
-                  <p class="card-text">We are available for ongoing support and maintenance as needed.</p>
+      <div id="services-container" class="container">
+        <div class="row justify-content-center m-0">
+            <div class="service col-lg col-md-6 my-sm-3 mb-3 d-flex flex-column justify-content-center">
+                <div class="card text-white border-0">
+                  <img src="./images/ape-ball-sm.png" style="object-fit:cover; object-position: bottom; max-height:500px;" class="card-img-top rounded" alt="...">
+                  <div class="card-img-overlay d-flex flex-column">
+                    <h4 class="card-title">Websites</h4>
+                    <h5 class="card-subtitle mb-2 text-success">From the design and build right through to launch, we create responsive websites that are true to your brand and easy for customers to use.</h5>
+                    <p class="card-text">We work with: HTML5, WordPress & Shopify.</p>
+                    <div class="flex-grow-1"></div>
+                    <a href="mailto:dougie@apeit.nz?subject=Website" class="btn btn-success">Make a start</a>
+                    <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@danielcph?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Daniel Hansen">
+                      <span style="display:inline-block;padding:0">
+                        <svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
+                          <title>Photo by Daniel Hansen</title>
+                          <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
                 </div>
+              </div>
+              <div class="service col-lg col-md-6 my-3 d-flex flex-column justify-content-center">
+          <div class="card text-white border-0">
+            <img src="./images/ape-hand-sm.png" class="card-img-top rounded" style="object-fit:cover;  object-position: bottom; max-height:500px;" alt="...">
+            <div class="card-img-overlay d-flex flex-column">
+              <h4 class="card-title">Care & Maintenance</h4>
+              <h5 class="card-subtitle mb-2 text-success">To keep your website in shipshape and performing well on search engines, we provide ongoing
+                functional and technical support.</h5>
+              <div class="flex-grow-1"></div>
+              <a href="mailto:dougie@apeit.nz?subject=Website+care" class="btn btn-success">Spruce up your site</a>
+              <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@casparrubin?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Caspar Camille Rubin"><span style="display:inline-block;padding:0"><svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>Photo by Caspar Camille Rubin</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span></a>
             </div>
           </div>
-          <div class="text-center">
-            <a href="mailto:dougie@apeit.nz?subject=Website" class="col-sm-6 col nav-link btn btn-lg btn-success" style="margin: auto;">Find out what works for you</a>
+        </div>
+        <div class="service col-lg col-md-6 my-sm-3 mt-3 d-flex flex-column justify-content-center">
+          <div class="card text-white border-0">
+            <img src="./images/intelligent-gorilla-sm.png" class="card-img-top rounded" style="object-fit:cover; object-position: bottom; max-height:500px;" alt="...">
+            <div class="card-img-overlay d-flex flex-column">
+              <h4 class="card-title">Business Intelligence</h4>
+              <h5 class="card-subtitle mb-2 text-success">With a passion for making the complex simple, we distill your data into beautiful visualisations so you can boost business and get ahead of the crowd.</h5>
+              <p class="card-text">Whizzes at: Oracle, SQL Server and Power BI.</p>
+              <div class="flex-grow-1"></div>
+              <a href="mailto:dougie@apeit.nz?subject=Help+with+data" class="btn btn-success">Get help with data</a>
+              <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@bryanhanson?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Bryan Hanson"><span style="display:inline-block;padding:0"><svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>Photo by Bryan Hanson</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -111,12 +122,24 @@ One of the best things working with you is that you respond immediately to any q
         </div>
       </div>
 
+      <div id="face-container" class="container">
+          <hr class="d-none d-sm-block">
+        <div id="hero" class="jumbotron centred text-white w-100 bg-none">
+            <h2 class="col col-sm-9">Meet Dougie</h2>
+            <br class="d-none d-sm-block">
+            <p class="lead col-8">With a patchwork of professions to his name (Data Scientist, Bio-mechanical Ergonomist,
+                Homebrewer), Dougie started apeit because….</p>
+            <br>
+            <a title="Say Hi" class="w-25 nav-link btn btn-lg btn-info" href="mailto:dougie@apeit.nz?subject=Just+saying+hello&body=Hi.+Would+love+to+have+a+chat+about+web+stuff.+Feel+free+to+call+me+on...">Say Hi</a>
+        </div>
+      </div>
+
       <div class="bg-light py-sm-4">
           <div class="container">
             <div class="jumbotron bg-white border mb-0">
         <h2 class="text-center text-success">This week we have been mostly working on...</h2>
         <br>
-        <div class="row align-items-center justify-content-center" style="opacity:0.5;">
+        <div class="row align-items-center justify-content-center" style="opacity:1;">
             <div class="col-lg col-md-5 col-8 m-3 d-flex justify-content-center">
                 <a href="https://aikidonelson.nz" target="_blank">
                     <img src="./images/AikidoEmblem.png" class="w-100" style="max-height: 100px; object-fit: contain;">
@@ -142,61 +165,7 @@ One of the best things working with you is that you respond immediately to any q
         </div>
       </div>
 
-        <div id="services-container" class="container">
-          <div class="row justify-content-center m-0">
-              <div class="service col-lg col-md-6 my-sm-3 mb-3 d-flex flex-column justify-content-center">
-                  <div class="card text-white border-0">
-                    <img src="./images/ape-ball-sm.png" style="object-fit:cover; object-position: bottom; max-height:500px;" class="card-img-top rounded" alt="...">
-                    <div class="card-img-overlay d-flex flex-column">
-                      <h4 class="card-title">Responsive Websites</h4>
-                      <h5 class="card-subtitle mb-2 text-success">Make your brand and message look equally attractive on both laptops and phones.</h5>
-                      <p class="card-text">We'll mock up options for your site layout, colours and logo, for the best user experience.</p>
-                      <p class="card-text">Comfortable with HTML5, WordPress and Shopify.</p>
-                      <div class="flex-grow-1"></div>
-                      <a href="mailto:dougie@apeit.nz?subject=Website" class="btn btn-success">Make a start</a>
-                      <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@danielcph?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Daniel Hansen">
-                        <span style="display:inline-block;padding:0">
-                          <svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32">
-                            <title>Photo by Daniel Hansen</title>
-                            <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
-                          </svg>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="service col-lg col-md-6 my-3 d-flex flex-column justify-content-center">
-            <div class="card text-white border-0">
-              <img src="./images/ape-hand-sm.png" class="card-img-top rounded" style="object-fit:cover;  object-position: bottom; max-height:500px;" alt="...">
-              <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title">Care & Maintenance</h4>
-                <h5 class="card-subtitle mb-2 text-success">We provide ongoing support to keep your site performing on search engines.</h5>
-                <p class="card-text">Let us know about any enhancements you need to the functionality, or to freshen up your site.</p>
-                <p class="card-text">Manage the site content yourself, or pass that to us!</p>
-                <div class="flex-grow-1"></div>
-                <a href="mailto:dougie@apeit.nz?subject=Website+care" class="btn btn-success">Spruce up your site</a>
-                <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@casparrubin?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Caspar Camille Rubin"><span style="display:inline-block;padding:0"><svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>Photo by Caspar Camille Rubin</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span></a>
-              </div>
-            </div>
-          </div>
-          <div class="service col-lg col-md-6 my-sm-3 mt-3 d-flex flex-column justify-content-center">
-            <div class="card text-white border-0">
-              <img src="./images/intelligent-gorilla-sm.png" class="card-img-top rounded" style="object-fit:cover; object-position: bottom; max-height:500px;" alt="...">
-              <div class="card-img-overlay d-flex flex-column">
-                <h4 class="card-title">Business Intelligence</h4>
-                <h5 class="card-subtitle mb-2 text-success">Communicate clearly with your users by distilling your data into a clean report.</h5>
-                <p class="card-text">We have a passion for turning complex data sets into beautiful visualisations.</p>
-                <p class="card-text">Fluent in Oracle, SQL Server and Power BI.</p>
-                <div class="flex-grow-1"></div>
-                <a href="mailto:dougie@apeit.nz?subject=Help+with+data" class="btn btn-success">Get help with data</a>
-                <a style="position:absolute; top: 0; right: 0; background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@bryanhanson?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Photo by Bryan Hanson"><span style="display:inline-block;padding:0"><svg xmlns="http://www.w3.org/2000/svg" style="height:8px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>Photo by Bryan Hanson</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="quote" class="jumbotron centred text-dark bg-light mb-0">
+      <div id="quote" class="jumbotron centred text-dark mb-0" style="background-color: #bde1e7;">
           <div class="container">
             <div class="row justify-content-center">
               <i class="col-lg-1 col-2 fas fa-3x fa-quote-left"></i>
@@ -208,13 +177,10 @@ One of the best things working with you is that you respond immediately to any q
     
       <div class="container">
         <div class="jumbotron bg-info text-white my-sm-4 mb-0">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-lg-4 m-lg-0 mb-5 d-none d-sm-block" style="max-height: 300px; max-width: 300px;">
-            <a href="https://www.google.co.nz/maps/place/111+Bridge+Street,+Nelson+7010" target="_blank">
-            <img src="./images/bridgestreetmap.png" alt="" class="w-100" style="border-radius: 0.3rem;">
-          </a>
-          </div>
-          <div class="col-lg-8 d-flex align-items-center justify-content-center">
+          <h2>Want to chat?</h2>
+          <p class="lead">Here's how to get hold of us</p>
+        <div class="row justify-content-left align-items-center">
+          <div class="col-lg-6 d-flex align-items-center ">
             <h3 class="lead">
               ape it limited<br>
               Bridge Street Collective<br>
@@ -227,7 +193,12 @@ One of the best things working with you is that you respond immediately to any q
               Email: dougie@apeit.nz
             </h3>
           </div>
-        </div>
+          <div class="col-lg-6 m-lg-0 mb-5 d-none d-sm-block" style="max-height: 300px; max-width: 300px;">
+              <a href="https://www.google.co.nz/maps/place/111+Bridge+Street,+Nelson+7010" target="_blank">
+              <img src="./images/bridgestreetmap.png" alt="" class="w-100" style="border-radius: 0.3rem;">
+            </a>
+            </div>
+          </div>
       </div>
       </div>
 
