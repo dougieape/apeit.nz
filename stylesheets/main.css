@@ -1,23 +1,190 @@
 #hero-container {
-  background: url(../images/meri-sorgaard-a2VNcdMEbOI-unsplash.jpg) no-repeat center;
-  background-size: 100%; /*proportional resize*/
- /* background-position-x: 70%; */
+  /*background: url(../images/meri-sorgaard-a2VNcdMEbOI-unsplash.jpg) no-repeat center;
+  background-size: cover;
+ /* background-position-x: 70%; 
+  opacity: 1;*/
+  position: relative;
+  height: 600px;
+}
+
+nava {
+  background-color: rgba(0,0,0,.5) !important;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+#largesun {
+  content: "";
+  background: url(../images/largesun.jpg) no-repeat center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -4;  
+  background-size: cover;
+  /*animation: fadeout 5s;
+  animation-timing-function: ease-in;*/
+}
+
+#smallsun {
+  content: "";
+  background: url(../images/smallsun.jpg) no-repeat center;
   opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -3;  
+  background-size: cover;
+/*  animation: fadeout 7s;
+  animation-timing-function: ease-in-out;*/
+}
+
+#frontleaves {
+  content: "";
+  background: url(../images/frontleaves.png) no-repeat center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2;  
+  background-size: cover;
+  animation: fadeout 3s;
+  /*-webkit-animation: fadein 1s;*/
+  animation-timing-function: ease-in-out;
+}
+
+#leaves {
+  content: "";
+  background: url(../images/original.jpg) no-repeat center;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+  background-size: cover;
+  /*animation: fadeout 1s;
+  animation-timing-function: ease-in-out;*/
+}
+
+#hero-spacer {
+  position: relative;
+  height: 200px;
 }
 
 #face-container {
-  background: url(../images/founder-md.png) no-repeat center;
-  background-size: 100%; /*proportional resize*/
- /* background-position-x: 70%; */
-  opacity: 1;
+  /*https://unsplash.com/@merifoodface*/
+  background: url(../images/ghost.png) no-repeat center;
+  background-size: cover; /*proportional resize*/
+  background-position-x: 70%;
+  background-position-y: 100%; 
+  /*opacity: 1;*/
 }
 
-#hero, .navbar {
+#hero {
   background: none;
+}
+
+#hero>h1 {
+  font-size: 3rem;
 }
 
 #hero>h1, #hero>h2, #hero>p {
   text-shadow: 0px 5px 10px black, 0px -5px 10px black, 5px 0px 10px black, -5px 0px 10px black;
+}
+
+.navbar {
+  background: rgba(0,0,0,0);
+}
+
+.bs-component {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Add the below transitions to allow a smooth color change similar to lyft */
+.navbar, .navbar-collapse.collapse, .hidefade, .hidescale, .hideleft, .hidelow {
+  -webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -ms-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.navbar.scrolled {
+  background: rgb(240, 240, 240); /* IE */
+  background: rgba(255, 255, 255, 0.95); /* NON-IE */
+}
+
+.navbar-collapse.collapse.show {
+  background: rgb(240, 240, 240); /* IE */
+  background: rgba(255, 255, 255, 0.95); /* NON-IE */
+  border-radius: 5px;
+}
+
+.navbar-collapse.collapse.show .nav-link {
+  color: black;
+}
+
+.nav-link.scrolled {
+  color: black !important;
+}
+
+#logo.scrolled {
+  opacity: 0;
+}
+
+.hidefade {
+  opacity: 0;
+}
+
+.hidefade.in-view {
+  opacity: 1;
+}
+
+.hidescale {
+  transform: scale(.8);
+}
+
+.hidescale.in-view {
+  transform: scale(1);
+}
+
+.hideleft {
+  transform: matrix(2, 0, 0, 2, -200, -100) !important;
+}
+
+.hideleft.in-view {
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+/*
+.hidelow {
+  transform: matrix(3, 0, 0, 3, -800, 100) !important;
+}
+
+.hidelow.in-view {
+  transform: matrix(1, 0, 0, 1, 0, 0) !important;
+}
+*/
+#darklogo.scrolled {
+  opacity: 1;
 }
 
 .divWithBgImage1 {
@@ -67,10 +234,25 @@ p.lead, .card-subtitle {
       font-size: 3rem;
   }
 
-  i {
-    opacity: .3;
+  #logo {
+    position: absolute;
   }
 
+  #darklogo {
+    opacity: 0;
+  }
+
+  i {
+    opacity: 1;
+  }
+
+  i.fa-bars.scrolled {
+    color: black !important;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
 
   html {
     font-size: 1rem;
@@ -92,6 +274,11 @@ p.lead, .card-subtitle {
     .quote {
       font-size: 1rem;
     }
+
+    #hero>h1 {
+      font-size: 2rem;
+    }
+
     h2 {
       font-size: 1.5rem;
     }
