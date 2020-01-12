@@ -57,6 +57,11 @@ function checkScroll(){
         $('i').removeClass("scrolled");
     }
 
+    if($(window).scrollTop() > 0){
+        $('#frontleaves').addClass("scrolled");
+    } else {
+        $('#frontleaves').removeClass("scrolled");
+    }
     $('.hidefade').each( function(i){
             
         var middle_of_object = $(this).position().top + 100; //($(this).outerHeight()/2);

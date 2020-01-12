@@ -67,6 +67,10 @@ nava {
   animation-timing-function: ease-in-out;
 }
 
+#frontleaves.scrolled {
+  opacity: 1;
+}
+
 #leaves {
   content: "";
   background: url(../images/original.jpg) no-repeat center;
@@ -89,10 +93,10 @@ nava {
 
 #face-container {
   /*https://unsplash.com/@merifoodface*/
-  background: url(../images/ghost.png) no-repeat center;
+  background: url(../images/dougie-md.jpeg) no-repeat center;
   background-size: cover; /*proportional resize*/
   background-position-x: 70%;
-  background-position-y: 100%; 
+  background-position-y: 40%; 
   /*opacity: 1;*/
 }
 
@@ -120,12 +124,12 @@ nava {
 }
 
 /* Add the below transitions to allow a smooth color change similar to lyft */
-.navbar, .navbar-collapse.collapse, .hidefade, .hidescale, .hideleft, .hidelow {
-  -webkit-transition: all 1s ease-out;
-  -moz-transition: all 1s ease-out;
-  -o-transition: all 1s ease-out;
-  -ms-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+.navbar, .navbar-collapse.collapse, .hidefade, .hidescale, .hideleft, .hidelow, #frontleaves, #logo {
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .navbar.scrolled {
@@ -160,7 +164,7 @@ nava {
 }
 
 .hidescale {
-  transform: scale(.8);
+  transform: scale(.95);
 }
 
 .hidescale.in-view {
@@ -168,21 +172,21 @@ nava {
 }
 
 .hideleft {
-  transform: matrix(2, 0, 0, 2, -200, -100) !important;
+  transform: matrix(1.5, 0, 0, 1.5, -100, 0) !important;
 }
 
 .hideleft.in-view {
   transform: matrix(1, 0, 0, 1, 0, 0) !important;
 }
-/*
+
 .hidelow {
-  transform: matrix(3, 0, 0, 3, -800, 100) !important;
+  transform: matrix(1, 0, 0, 0.1, 0, 0) !important;
 }
 
 .hidelow.in-view {
   transform: matrix(1, 0, 0, 1, 0, 0) !important;
 }
-*/
+
 #darklogo.scrolled {
   opacity: 1;
 }
@@ -230,6 +234,12 @@ p.lead, .card-subtitle {
   font-family: 'Lora', serif;
 }
 
+.card>img {
+  height: 150px;
+  width: 250px;
+  margin: auto !important;
+}
+
   .navbar-brand {
       font-size: 3rem;
   }
@@ -257,19 +267,67 @@ p.lead, .card-subtitle {
   html {
     font-size: 1rem;
   }
-/*  
-  @media only screen and (max-width: 992px) {
-    html {
-      font-size: 0.9rem;
-    }
+
+  #hero>h1>div {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    padding: 10px;
+    z-index: 10;  
   }
 
-  @media only screen and (max-width: 768px) {
-    html {
-      font-size: 0.8rem;
-    }
+
+
+  #hi {    
+    animation: showup 5s ;
   }
-*/
+
+#we-are {
+width:300px;
+animation: reveal 5s ;
+}
+
+#we-do {
+  display: block !important;
+  z-index: 5 !important;
+  margin-top: -0px;
+  animation: slidein 5s ;
+}
+
+#say-hi {
+  animation: calltoaction 3.5s;
+}
+
+@keyframes showup {
+0% {opacity:0;}
+20% {opacity:1;}
+80% {opacity:1;}
+100% {opacity:1;}
+}
+
+@keyframes reveal {
+0% {opacity:0;width:0px;}
+15% {opacity:0;width:0px;}
+25% {opacity:0;}
+30% {width:300px;}
+40% {opacity:1;}
+100% {opacity:1;width:300px;}
+}
+
+@keyframes slidein {
+  0% { opacity:0; margin-top:-100px;}
+  40% { opacity:0; margin-top:-100px;}
+  47% { opacity:0.2; }
+  55% { opacity: 1; margin-top:0px; }
+  100% { margin-top:0px; }
+  }
+  
+@keyframes calltoaction {
+  0% { opacity: 0; }
+  80% { opacity: 0; }
+  100% { opacity: 1; }
+}  
+
   @media only screen and (max-width: 480px) {
     .quote {
       font-size: 1rem;
@@ -306,4 +364,19 @@ p.lead, .card-subtitle {
     #steps>h2, #steps h4 {
       text-align: left !important;
     }
+
+    #we-are {
+      width:200px;
+      animation: reveal 5s ;
+    }
+      
+    @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      15% {opacity:0;width:0px;}
+      25% {opacity:0;}
+      30% {width:200px;}
+      40% {opacity:1;}
+      100% {opacity:1;width:200px;}
+    }
   }
+
