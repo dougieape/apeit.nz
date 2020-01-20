@@ -4,7 +4,8 @@
  /* background-position-x: 70%; 
   opacity: 1;*/
   position: relative;
-  height: 600px;
+  height: 100vh;
+  max-height: 600px;
 }
 
 nava {
@@ -88,12 +89,12 @@ nava {
 
 #hero-spacer {
   position: relative;
-  height: 200px;
+  height: 100px;
 }
 
 #face-container {
   /*https://unsplash.com/@merifoodface*/
-  background: url(../images/dougie-md.jpeg) no-repeat center;
+  background: url(../images/dougie-md.jpg) no-repeat center;
   background-size: cover; /*proportional resize*/
   background-position-x: 70%;
   background-position-y: 40%; 
@@ -109,7 +110,7 @@ nava {
 }
 
 #hero>h1, #hero>h2, #hero>p {
-  text-shadow: 0px 5px 10px black, 0px -5px 10px black, 5px 0px 10px black, -5px 0px 10px black;
+  text-shadow: 0px 5px 10px darkgreen, 0px -5px 10px darkgreen, 5px 0px 10px darkgreen, -5px 0px 10px darkgreen;
 }
 
 .navbar {
@@ -124,12 +125,12 @@ nava {
 }
 
 /* Add the below transitions to allow a smooth color change similar to lyft */
-.navbar, .navbar-collapse.collapse, .hidefade, .hidescale, .hideleft, .hidelow, #frontleaves, #logo {
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+.navbar, .navbar-collapse.collapse, .hidefade, .hidescale, .hideleft, .hidelow, #frontleaves, #logo, #darklogo {
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  -ms-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
 }
 
 .navbar.scrolled {
@@ -155,6 +156,14 @@ nava {
   opacity: 0;
 }
 
+#darklogo.scrolled {
+  opacity: 1;
+}
+/*
+#logo.scrolled>img, #darklogo.scrolled>img {
+  width: 90px;
+}
+*/
 .hidefade {
   opacity: 0;
 }
@@ -185,10 +194,6 @@ nava {
 
 .hidelow.in-view {
   transform: matrix(1, 0, 0, 1, 0, 0) !important;
-}
-
-#darklogo.scrolled {
-  opacity: 1;
 }
 
 .divWithBgImage1 {
@@ -251,7 +256,11 @@ p.lead, .card-subtitle {
   #darklogo {
     opacity: 0;
   }
-
+/*
+  #logo>img, #darklogo>img {
+    width: 120px;
+  }
+  */
   i {
     opacity: 1;
   }
@@ -287,6 +296,10 @@ width:300px;
 animation: reveal 5s ;
 }
 
+#ape-it {
+  animation: colorify 5s;
+}
+
 #we-do {
   display: block !important;
   z-index: 5 !important;
@@ -294,8 +307,27 @@ animation: reveal 5s ;
   animation: slidein 5s ;
 }
 
+#web {
+  animation: calltoaction 4s;
+}
+
+
+#stuff {
+  animation: calltoaction 4.4s;
+}
+
 #say-hi {
-  animation: calltoaction 3.5s;
+  animation: calltoaction 5.5s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 3vh;
+}
+
+#hero>h1 {
+  position: absolute;
+  top: 40%;
+  left: 0;
 }
 
 @keyframes showup {
@@ -314,11 +346,17 @@ animation: reveal 5s ;
 100% {opacity:1;width:300px;}
 }
 
+@keyframes colorify {
+  0% {color: #fff;}
+  40% {color: #fff;}
+  60% {color: #e6e26d;}
+}
+  
 @keyframes slidein {
-  0% { opacity:0; margin-top:-100px;}
-  40% { opacity:0; margin-top:-100px;}
-  47% { opacity:0.2; }
-  55% { opacity: 1; margin-top:0px; }
+  0% { opacity:0; margin-top:-70px;}
+  45% { opacity:0; margin-top:-70px;}
+  52% { opacity:0.2; }
+  60% { opacity: 1; margin-top:0px; }
   100% { margin-top:0px; }
   }
   
@@ -333,8 +371,13 @@ animation: reveal 5s ;
       font-size: 1rem;
     }
 
+    #hero-container {
+      height: 90vh;
+    }
+    
     #hero>h1 {
       font-size: 2rem;
+      top: 50%;
     }
 
     h2 {
@@ -347,6 +390,10 @@ animation: reveal 5s ;
 
     #hero>p {
       font-size: 1rem;  
+    }
+
+    p.bio {
+      font-size: 1rem;
     }
 
     .container, .service {
@@ -366,17 +413,24 @@ animation: reveal 5s ;
     }
 
     #we-are {
-      width:200px;
+      width:220px;
       animation: reveal 5s ;
     }
       
+    @keyframes showup {
+      0% {opacity:0; transform: scale(3); margin-left: 50px;}
+      15% {transform: scale(3);  margin-left: 50px;}
+      20% {opacity:1; margin-left: 0px;}
+      30% {transform: scale(1);}
+    }
+
     @keyframes reveal {
       0% {opacity:0;width:0px;}
       15% {opacity:0;width:0px;}
       25% {opacity:0;}
-      30% {width:200px;}
+      30% {width:220px;}
       40% {opacity:1;}
-      100% {opacity:1;width:200px;}
+      100% {opacity:1;width:220px;}
     }
   }
 
