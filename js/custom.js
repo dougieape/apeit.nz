@@ -40,7 +40,10 @@ $(window).scroll(function() {
   /**
  * Listen to scroll to change header opacity class
  */
+var navbarHeight;
+
 function checkScroll(){
+    navbarHeight = $('.navbar').height();
     var startY = $('.navbar').height() * 2; //The point where the navbar changes in px
 
     if($(window).scrollTop() > startY){
@@ -91,6 +94,6 @@ $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
 
     $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - $('.navbar').height()
+        scrollTop: $($.attr(this, 'href')).offset().top - navbarHeight
     }, 500);
 });
