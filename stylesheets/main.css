@@ -1,7 +1,7 @@
 #hero-container {
   /*background: url(../images/meri-sorgaard-a2VNcdMEbOI-unsplash.jpg) no-repeat center;
   background-size: cover;
- /* background-position-x: 70%; 
+ /* background-position-x: 70%;
   opacity: 1;*/
   position: relative;
   height: 100vh;
@@ -31,7 +31,7 @@ nava {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -3;  
+  z-index: -3;
   background-size: cover;
   animation: zoom12 2s;
 /*  animation: fadein .5s;
@@ -47,7 +47,7 @@ nava {
   bottom: 0;
   right: 0;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
   background-size: cover;
   /*animation: fadeout 3s;
   /*-webkit-animation: fadein 1s;
@@ -82,7 +82,7 @@ nava {
   background: url(../images/dougie-md.jpg) no-repeat center;
   background-size: cover; /*proportional resize*/
   background-position-x: 70%;
-  background-position-y: 40%; 
+  background-position-y: 40%;
   /*opacity: 1;*/
 }
 
@@ -203,7 +203,7 @@ nava {
      bottom: 0;
      left: 0;
      height: 40px;
-     width:100%; 
+     width:100%;
      text-align:center
   }
   .ctr {
@@ -235,8 +235,8 @@ p.lead, .card-subtitle {
 }
 
 .card>img {
-  height: 150px;
-  width: 250px;
+  height: 100px;
+  width: 150px;
   margin: auto !important;
 }
 
@@ -277,12 +277,12 @@ p.lead, .card-subtitle {
     overflow:hidden;
     white-space:nowrap;
     padding: 10px;
-    z-index: 10;  
+    z-index: 10;
   }
 
 
 
-#hi {    
+#hi {
   animation: showup 6s ;
 }
 
@@ -313,10 +313,8 @@ animation: reveal 6s ;
 
 #say-hi {
   animation: calltoaction 7.6s;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 3vh;
+  margin: 30px;
+  text-shadow: none;
 }
 
 #hero>h1, #face>h1 {
@@ -347,7 +345,7 @@ animation: reveal 6s ;
   95% {color: #fff;}
   100% {color: #e6e26d;}
 }
-  
+
 @keyframes slidein {
   0% { opacity:0; margin-top:-70px;}
   64% { opacity:0; margin-top:-70px;}
@@ -355,12 +353,12 @@ animation: reveal 6s ;
   77% { opacity: 1; margin-top:0px; }
   100% { margin-top:0px; }
   }
-  
+
 @keyframes calltoaction {
   0% { opacity: 0; }
   80% { opacity: 0; }
   100% { opacity: 1; }
-}  
+}
 
 
 .navbar-toggler[aria-expanded="true"] {
@@ -382,7 +380,7 @@ animation: reveal 6s ;
     #hero-container {
       height: 90vh;
     }
-    
+
     #hero>h1, #face>h1 {
       font-size: 2rem;
       top: 50%;
@@ -397,7 +395,7 @@ animation: reveal 6s ;
     }
 
     #hero>p, #face>p {
-      font-size: 1rem;  
+      font-size: 1rem;
     }
 
     p.bio {
@@ -424,7 +422,7 @@ animation: reveal 6s ;
       width:220px;
       animation: reveal 6s ;
     }
-      
+
     @keyframes showup {
       0% {opacity:0; transform: scale(3); margin-left: 50px;}
       17% {opacity:0; transform: scale(3); margin-left: 50px;}
@@ -432,7 +430,7 @@ animation: reveal 6s ;
       34% {opacity:1; margin-left: 0px;}
       43% {transform: scale(1);}
     }
-      
+
     @keyframes reveal {
       0% {opacity:0;width:0px;}
       30% {opacity:0;width:0px;}
@@ -441,17 +439,16 @@ animation: reveal 6s ;
       60% {opacity:1;}
       100% {opacity:1;width:220px;}
     }
-      
+
     #hero>h1, #hero>h2, #hero>p, #face>h1, #face>h2, #face>p {
       text-shadow: 0px 5px 5px darkgreen, -2px 0px 5px darkgreen, 0px -5px 5px darkgreen, 2px 0px 5px darkgreen;
       animation: late-shadow 4s;
     }
-    
+
     @keyframes late-shadow {
       0% {text-shadow: none;}
       40% {text-shadow: none;}
       100% {text-shadow: 0px 5px 5px darkgreen, -2px 0px 5px darkgreen, 0px -5px 5px darkgreen, 2px 0px 5px darkgreen;}
     }
-    
-  }
 
+  }
