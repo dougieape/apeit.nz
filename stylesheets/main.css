@@ -303,16 +303,19 @@ animation: reveal 6s ;
 }
 
 #web {
-  animation: calltoaction 5.8s;
+  opacity: 0;
+  animation: 1.5s calltoaction 4.3s forwards;
 }
 
 
 #stuff {
-  animation: calltoaction 6.3s;
+  opacity: 0;
+  animation: 1.5s calltoaction 4.8s forwards;
 }
 
 #say-hi {
-  animation: calltoaction 7.6s;
+  opacity: 0;
+  animation: 1.5s calltoaction 6s forwards;
   margin: 30px;
   text-shadow: none;
 }
@@ -356,7 +359,6 @@ animation: reveal 6s ;
 
 @keyframes calltoaction {
   0% { opacity: 0; }
-  80% { opacity: 0; }
   100% { opacity: 1; }
 }
 
